@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="shortcut icon" type="image/png" href="img/cv-icon.png">
+    <title>Svetlana Gumerbaeva CV</title>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script type="text/javascript">
+        function calculateAge() {
+            var birthday = new Date(1994, 7, 28);
+            var ageDifMs = Date.now() - birthday.getTime();
+            var ageDate = new Date(ageDifMs); // miliseconds from epoch
+            var age = Math.abs(ageDate.getUTCFullYear() - 1970);
+
+            var elem = document.getElementById("age");
+            elem.innerText = age + "YO";
+        }
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(69149638, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/69149638" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+</head>
+<body onload="calculateAge()">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="text-center" id="photo-header">
+                <!-- PHOTO (AVATAR) -->
+                <div id="photo">
+                    <img alt="avatar" src="avatar.jpg">
+                </div>
+                <div id="text-header">
+                    <h1>Hello,<br> my name is <span>Svetlana</span><sup id="age"></sup> and this is my CV</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row whitebg">
+        <div class="col-xs-12 col-sm-7">
+            <!-- EDUCATION -->
+            <div class="box">
+                <h2>Education</h2>
+
+                <ul class="clearfix" id="education">
+                    <li>
+                        <div class="year pull-left">2016</div>
+                        <div class="description pull-right">
+                            <h3>Kazan Federal University</h3>
+                            <p>Bachelor's degree in Sociology
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="year pull-left">2012</div>
+                        <div class="description pull-right">
+                            <h3>Gymnasium №93</h3>
+                            <p>Advanced liberal arts class</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- EXAMINATIONS -->
+            <div class="box" hidden>
+                <h2>Tests, examinations</h2>
+
+                <ul class="clearfix" id="tests">
+                    <li>
+                        <div class="year pull-left">YEAR</div>
+                        <div class="description pull-right">
+                            <p>DESCRIPTION</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- EXPERIENCES -->
+            <div class="box">
+                <h2>Experiences</h2>
+
+                <div class="job clearfix">
+                    <div class="col-xs-3">
+                        <div class="where">Kazan City Mayor's Office</div>
+                        <div class="year">2018 - 2020</div>
+                    </div>
+                    <div class="col-xs-9">
+                        <div class="profession">Human Resources Specialist</div>
+                        <div class="description">
+                            <ul>
+                                <li>recruitment, selection and evaluation of applicants;</li>
+                                <li>assessment of professionally important qualities of candidates when applying
+                                    for a job;
+                                </li>
+                                <li>conducting interviews;</li>
+                                <li>writing detailed reports for each candidate indicating strengths and
+                                    weaknesses;
+                                </li>
+                                <li>сarrying out group tests for applicants for a specially developed program;</li>
+                                <li>preparation of quarterly, annual reports on rotation and staff turnover</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job clearfix">
+                    <div class="col-xs-3">
+                        Сonstruction company
+                        <div class="where">KamGes-engineering</div>
+                        <div class="year">2017 - 2018</div>
+                    </div>
+                    <div class="col-xs-9">
+                        <div class="profession">Office Manager</div>
+                        <div class="description">
+                            <ul>
+                                <li>planning the manager's working day;</li>
+                                <li>receiving calls, registering correspondence;</li>
+                                <li>document management;</li>
+                                <li>organization of meetings;</li>
+                                <li>ordering tickets for the manager and other employees during a business trip</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-5">
+            <!-- CONTACT -->
+            <div class="box clearfix">
+                <h2>Contact</h2>
+
+                <div class="contact-item">
+                    <div class="icon pull-left text-center"><span class="fa fa-place-marker"></span></div>
+                    <div class="title only pull-right">Berlin, Germany</div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon pull-left text-center"><span class="fa fa-phone"></span></div>
+                    <div class="title only pull-right">+49 176 29 60 57 74</div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon pull-left text-center"><span class="fa fa-email"></span></div>
+                    <div class="title only pull-right">svetlana@gumerbaev.ru</div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon pull-left text-center"><span class="fa fa-skype"></span></div>
+                    <div class="title pull-right">Skype</div>
+                    <div class="description pull-right">lana4ka93</div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon pull-left text-center"><span class="fa fa-linkedin"></span></div>
+                    <div class="title pull-right">LinkedIn</div>
+                    <div class="description pull-right"><a
+                            href="https://www.linkedin.com/in/svetlana-gumerbaeva-1031ab1b5/">svetlana-gumerbaeva</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- SKILLS -->
+            <div class="box">
+                <h2>Skills</h2>
+
+                <div class="skills">
+                    <div class="item-skills" style="width: 80%;">Recruiting</div>
+                    <div class="item-skills" style="width: 90%;">Human Resources (HR)</div>
+                    <div class="item-skills" style="width: 90%;">Interviewing</div>
+
+                    <!-- <div class="item-skills" style="width: 20%;">NoSQL (MongoDB)</div> -->
+                    <div class="skills-legend clearfix">
+                        <div class="legend-left legend">Null</div>
+                        <div class="legend-left legend">Beginner</div>
+                        <div class="legend-right legend"><span>Proficient</span></div>
+                        <div class="legend-right legend">Expert</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LANGUAGES -->
+            <div class="box">
+                <h2>Languages</h2>
+
+                <div id="language-skills">
+                    <div class="skill">Russian
+                        <div class="icons pull-right">
+                            <div class="icons-red" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">English
+                        <div class="icons pull-right">
+                            <div class="icons-red" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">Tatar
+                        <div class="icons pull-right">
+                            <div class="icons-red" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">German
+                        <div class="icons pull-right">
+                            <div class="icons-red" style="width: 5%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HOBBIES -->
+            <div class="box">
+                <h2>Hobbies</h2>
+
+                <div class="hobby">Сycling</div>
+                <div class="hobby">Yoga</div>
+                <div class="hobby">Needlework</div>
+                <div class="hobby">Travelling</div>
+
+            </div>
+        </div>
+    </div>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/57677749" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+</div>
+</body>
+</html>
